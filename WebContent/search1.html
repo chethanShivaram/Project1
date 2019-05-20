@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+input[type=text] {
+  width: 130px;
+  position:absolute;
+  left:20%;
+  top:16%;
+  box-sizing: border-box;
+  border: 2px solid grey;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: lightblue;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 20%;
+}
+</style>
+</head>
+<body>
+<form action="Search" method="post" >
+  <input type="text" name="search" placeholder="Search...">
+</form>
+
+</body>
+</html>

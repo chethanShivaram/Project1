@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid black;}
+
+.container 
+{
+background-color: lightgrey;
+  width: 500px;
+  height: 340px;
+  position: fixed;
+  top: 25%; 
+  left: 28%;
+}
+
+.table1{
+margin:10px;
+}
+.submit1{
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+h2 {
+  position: absolute;
+  left: 575px;
+  top: 80px;
+  text-transform: uppercase;
+}
+</style>
+</head>
+
+<body>
+<h2>Welcome</h2>
+<center>
+ <div class="container" >
+		<form name="f1" action="RegisterEmp" method="get">
+			<table align="center">
+				<caption>
+					<h3>
+						Registration page
+						<h3>
+				</caption>
+				<div class="table1">
+					<tr>
+						<td><label for="id1">Full Name</label></td>
+						<td><input type="text" name="n1" id="id1"
+							placeholder="Type name here" required></td>
+					</tr>
+					<tr> <td>&nbsp;</td> </tr>
+					<tr>
+						<td><label for="id3">Date of joining </label></td>
+						<td><input type="date" name="n2" id="id3"
+							placeholder="Type date of joining here" required></td>
+					</tr>
+					<tr> <td>&nbsp;</td> </tr>
+					<tr>
+						<td><label for="id4">Date of birth </label></td>
+						<td><input type="date" data-date-inline-picker="true"
+							name="n3" id="id4" placeholder="Date of birth" required>
+						</td>
+					</tr>
+					<tr> <td>&nbsp;</td> </tr>
+					<tr>
+						<td><label for="id5">Depertment</label></td>
+						<td><select name="n4">
+								<option value="IT">IT</option>
+								<option value="Admin">Admin</option>
+								<option value="HR">HR</option>
+						</select></td>
+					</tr>
+					<tr> <td>&nbsp;</td> </tr>
+					<tr>
+						<td><label for="id6">Designation </label></td>
+						<td><select name="n5">
+								<option value="Developer">Developer</option>
+								<option value="Senior Developer">Senior Developer</option>
+								<option value="Testing">Testing</option>
+								<option value="Quality ">Quality</option>
+						</select></td>
+					</tr>
+					<tr> <td>&nbsp;</td> </tr>
+				</div>
+				<div class="submit1">
+					<tr>
+						<td><input type="submit" value="Submit"></td>
+						<td><input type="reset" value="Clear"></td>
+					</tr>
+				</div>
+			</table>
+		</form>
+</div>
+</center>
+</body>
+</html>
