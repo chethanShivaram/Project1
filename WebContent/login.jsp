@@ -1,6 +1,13 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<% 
+response.setHeader("Cache-Control","no-cache"); //forces caches to obtain a new copy of the page from the origin server
+response.setHeader("Cache-Control","no-store"); //directs caches not to store the page under any circumstance
+response.setDateHeader("Expires", 0); //causes the proxy cache to see the page as "stale"
+response.setHeader("Pragma","no-cache"); //HTTP 1.0 backward compatibility
+%>
 <style>
 body {font-family: Calibri;}
 form {border: 1px solid #f1f1f1;}
@@ -58,8 +65,10 @@ button:hover{
 
 </style>
 </head>
+<c:if test="${Error!=null }">
+<p style=text-align:center;margin:100px;;position:fixed;color:red;left:33%;>Session Expired! Please login again. </p>
+</c:if>
 <body>
-
 <img src="photos1.jpg" width=100%;>
 
 <form action="LoginServlet" method="get">
