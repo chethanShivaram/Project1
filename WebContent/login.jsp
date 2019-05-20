@@ -66,7 +66,7 @@ button:hover{
 </style>
 </head>
 <c:if test="${Error!=null }">
-<p style=text-align:center;margin:100px;;position:fixed;color:red;left:33%;>Session Expired! Please login again. </p>
+<p style=text-align:center;margin:100px;;position:fixed;color:black;left:33%;>Session Expired! Please login again. </p>
 </c:if>
 <body>
 <img src="photos1.jpg" width=100%;>
